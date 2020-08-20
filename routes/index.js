@@ -5,7 +5,7 @@ const Url = require('../models/URL');
 
 // GET VIEW 
 router.get('/', (req, res, next) => {
-    res.render('index');
+    res.render('index', { baseURL: process.env.BASEURL });
 });
 
 
